@@ -15,17 +15,46 @@
 
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
-    <h1 class="text-8xl font-bold underline">Music Player</h1>
-    <div class="music-container">
-      <div class="music-info">
-        <h4 id="title">Best Part of Me</h4>
-        <div class="progress-container">
+  <body class="bg-black flex md:flex md:flex-col md:justify-center md:items-center">
 
+    <div class="music-container">
+      
+      <h1 class="flex text-xs p-6 font-semibold justify-center text-white">Music Player</h1>
+      
+      <div class="img-container p-10">
+        <img src="albumart/BestPart.jpg" alt="music-cover" id="cover" class="rounded-2xl"/>
+      </div>
+      
+      <div class="music-info p-10">
+        <h4 class="title font-bold text-3xl text-white">Best Part of Me</h4>
+        <h3 class="artist text-lg text-light-gray pb-8">The Dunwells</h3>
+        
+        <div class="progress-container rounded bg-darker-gray my-6" id="progress-container">
+          <div class="progress bg-light-gray rounded" id="progress"></div>
+
+          <div class="time flex flex-row p-2 justify-between">
+            <p class="start text-white font-thin text-xs">2:13</p>
+            <p class="end text-white font-thin text-xs">-1:12</p>
+          </div>
         </div>
       </div>
+      
+      <audio src="songs/best_part_of_me.mp3" id="audio"></audio>
+
+      <div class="navigation pb-8 flex items-center justify-evenly">
+        <button id="prev" class="action-btn text-white">
+          <i class="fas fa-backward"></i>
+        </button>
+
+        <button id="play" class="action-btn text-other-blue bg-white rounded-full p-6">
+          <i class="fas fa-play"></i>
+        </button>
+
+        <button id="next" class="action-btn text-white">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
     </div>
-    <i class="fa-solid fa-play"></i>
 
     <script src="main.js"></script>
   </body>
