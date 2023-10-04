@@ -663,9 +663,35 @@ video {
   background-image: linear-gradient(#7b9fd7,#1c4075);
 }
 
+@media (min-width: 640px) {
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
+  .md\:w-32 {
+    width: 8rem;
+  }
+
+  .md\:w-28 {
+    width: 7rem;
+  }
+
+  .md\:w-20 {
+    width: 5rem;
+  }
+
+  .md\:w-36 {
+    width: 9rem;
   }
 
   .md\:flex-col {
@@ -678,6 +704,16 @@ video {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-36 {
+    width: 9rem;
   }
 }
 
