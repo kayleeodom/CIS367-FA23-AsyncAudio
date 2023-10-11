@@ -17,7 +17,7 @@
   </head>
   <body class="bg-black flex md:flex md:flex-col justify-center items-center">
 
-    <div class="music-container lg:w-80">
+    <div class="music-container lg:w-80 " id="music-container">
       
       <h1 class="flex text-xs p-6 font-semibold justify-center text-white">Music Player</h1>
       
@@ -26,13 +26,14 @@
       </div>
       
       <div class="music-info p-10 lg:p-6">
-        <h4 class="title font-bold text-3xl text-white lg:text-lg">Best Part of Me</h4>
-        <h3 class="artist text-lg text-light-gray pb-8 lg:pb-3">The Dunwells</h3>
+        <h4 class="title font-bold text-3xl text-white lg:text-lg" id="title">Best Part of Me</h4>
+        <h3 class="artist text-lg text-light-gray pb-8 lg:pb-3" id="artist">The Dunwells</h3>
         
         <div class="progress-container rounded bg-darker-gray my-6" id="progress-container">
           <div class="progress bg-light-gray rounded" id="progress"></div>
 
           <div class="time flex flex-row p-2 justify-between">
+            <!-- Need to take the hard code out-->
             <p class="start text-white font-thin text-xs">2:13</p>
             <p class="end text-white font-thin text-xs">-1:12</p>
           </div>
