@@ -8,8 +8,9 @@ module.exports = {
       'other-blue': '#1c4075',
       'white': '#FFFFFF',
       'black': '#000000',
-      'light-gray': '#D3D3D3',
-      'darker-gray': '#C0C0C0'
+      'light-gray': '#ededed',
+      'darker-gray': '#bababa',
+      'light-black': '#454545'
     }
   },
   plugins: [],

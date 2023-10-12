@@ -12,5 +12,19 @@
     background-image: linear-gradient(#7b9fd7,#1c4075);
 }
 
+.progress-container{
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+.progress{
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
 
 

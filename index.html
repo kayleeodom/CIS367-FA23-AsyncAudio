@@ -13,13 +13,22 @@
       referrerpolicy="no-referrer"
     />
 
+    <!--icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="bg-black flex md:flex md:flex-col justify-center items-center">
 
     <div class="music-container lg:w-80 " id="music-container">
-      
-      <h1 class="flex text-xs p-6 font-semibold justify-center text-white">Music Player</h1>
+      <div class="flex flex-row justify-evenly items-center">
+        <span class="material-symbols-outlined text-white">expand_more</span>
+        <h1 class="flex text-s p-6 font-semibold text-white">Music Player</h1>
+        <span class="material-symbols-outlined text-white">more_vert</span>
+      </div>
       
       <div class="img-container p-10 lg:p-6">
         <img src="" alt="music-cover" id="cover" class="rounded-xl lg:w-auto"/>
@@ -29,11 +38,11 @@
         <h4 class="title font-bold text-3xl text-white lg:text-lg" id="title"></h4>
         <h3 class="artist text-lg text-light-gray pb-8 lg:pb-3" id="artistName"></h3>
         
-        <div class="progress-container rounded bg-darker-gray my-6" id="progress-container">
-          <div class="progress bg-light-gray rounded" id="progress"></div>
+        <div class="progress-container bg-darker-gray" id="progress-container">
+          <div class="progress bg-light-gray" id="progress"></div>
 
           <div class="time flex flex-row p-2 justify-between">
-            <!-- Need to take the hard code out-->
+            <!-- Need to figure out changes-->
             <p class="start text-white font-thin text-xs" id="currTime"></p>
             <p class="end text-white font-thin text-xs" id="durTime"></p>
           </div>
@@ -54,6 +63,14 @@
         <button id="next" class="action-btn text-white">
           <i class="fas fa-forward"></i>
         </button>
+      </div>
+
+      <div class="flex flex-row justify-between bg-back-blue rounded-t-lg p-1 mx-4">
+        <p class="text-white font-bold">Lyrics</p>
+        <div>
+          <span class="material-symbols-outlined bg-light-black rounded-full text-white p-2">upload</span>
+          <span class="material-symbols-outlined bg-light-black rounded-full text-white p-2">expand_content</span>
+        </div>
       </div>
     </div>
 
