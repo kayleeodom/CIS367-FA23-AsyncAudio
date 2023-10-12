@@ -28,7 +28,7 @@ const artists = ['Jonathan Ceaser','Bryce Greene','The Dunwells','Lakey','Bryce 
 const backgroundGradients = [
   'linear-gradient(to bottom, #3d5375, #151d29)',
   'linear-gradient(to bottom, #BA5333, #411d12)',
-  'linear-gradient(to bottom, #5178b4, #5178b4)',
+  'linear-gradient(to bottom, #5178b4, #1c4075)',
   'linear-gradient(to bottom, #b45309, #3f1d03)',
   'linear-gradient(to bottom, #C9BEC8, #4b3e4a)',
   'linear-gradient(to bottom, #D85B7B, #571526)',
