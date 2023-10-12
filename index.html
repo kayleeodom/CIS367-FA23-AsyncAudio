@@ -18,12 +18,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--possible icon for playlist work
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />-->
 
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-black flex md:flex md:flex-col justify-center items-center">
+  <body class="flex flex-col justify-center items-center bg-gradient-to-b from-back-blue to-other-blue">
 
-    <div class="music-container lg:w-80 " id="music-container">
+    <div class="music-container align-middle justify-center lg:py-10 lg:w-80">
       <div class="flex flex-row justify-evenly items-center">
         <span class="material-symbols-outlined text-white">expand_more</span>
         <h1 class="flex text-s p-6 font-semibold text-white">Music Player</h1>
@@ -31,7 +33,7 @@
       </div>
       
       <div class="img-container p-10 lg:p-6">
-        <img src="" alt="music-cover" id="cover" class="rounded-xl lg:w-auto"/>
+        <img src="" alt="music-cover" id="cover" class="rounded-xl"/>
       </div>
       
       <div class="music-info p-10 lg:p-6">
@@ -65,9 +67,15 @@
         </button>
       </div>
 
-      <div class="flex flex-row justify-between bg-back-blue rounded-t-lg p-1 mx-4">
-        <p class="text-white font-bold">Lyrics</p>
-        <div>
+      <!--possible playlist work
+      <div class="flex flex-row justify-end items-start">
+        <span class="material-symbols-outlined text-white">share</span>
+        <span class="material-symbols-outlined text-white">menu</span>
+      </div>-->
+
+      <div class="flex flex-row justify-between bg-back-blue rounded-t-lg p-1 mx-4 items-end">
+        <p class="text-white font-bold px-1">Lyrics</p>
+        <div class="">
           <span class="material-symbols-outlined bg-light-black rounded-full text-white p-2">upload</span>
           <span class="material-symbols-outlined bg-light-black rounded-full text-white p-2">expand_content</span>
         </div>
