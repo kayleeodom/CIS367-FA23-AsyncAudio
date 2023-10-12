@@ -15,7 +15,26 @@ const artist = document.getElementById('artist');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
+// load songs
+const songs = ['Aidan','Autumn Sun','Best Part of Me','Better Days','I Cant Make You Love Me Cover','Just Relax','Paranormal Is Real','Perfect','Polarity','Your Shoulder'];
 
+// title and artist
+const artists = ['Jonathan Ceaser','Bryce Greene','The Dunwells','Lakey','Bryce Greene','Purrple Cat','Leonell Cassio','Ed Sheeran','Ethos','Kaitlyn Thompson']
+
+
+// keep track of song
+let songIndex = 0;
+
+// load song details into DOM
+loadSong(songs[songIndex]);
+
+// song details
+function loadSong(song){
+  title.innerText = song;
+  audio.src = `songs/${song}.mp3`;
+  cover.src = `albumart/${song}.jpg`;
+  // artist
+}
 
 // Play Song
 function playSong(){
