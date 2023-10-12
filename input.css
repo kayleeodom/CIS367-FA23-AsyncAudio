@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/*body{
-    background-image: linear-gradient(#7b9fd7,#1c4075);
-}
-
-.music-container{
-    background-image: linear-gradient(#7b9fd7,#1c4075);
-}*/
-
 .progress-container{
     border-radius: 5px;
     cursor: pointer;
@@ -23,6 +15,14 @@
     width: 0%;
     transition: width 0.1s linear;
 }
+
+/*.Aidan {
+    background-image: linear-gradient(#3d5375,#151d29);
+}
+
+.Autumn_Sun {
+    background-image: linear-gradient(#ba5333,#411d12);
+}*/
 
 
 

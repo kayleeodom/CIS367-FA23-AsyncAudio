@@ -16,13 +16,27 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 const artistName = document.getElementById('artistName');
+const body = document.getElementById('body');
 
 // load songs
 const songs = ['Aidan','Autumn Sun','Best Part of Me','Better Days','I Cant Make You Love Me Cover','Just Relax','Paranormal Is Real','Perfect','Polarity','Your Shoulder'];
 
 // title and artist
-const artists = ['Jonathan Ceaser','Bryce Greene','The Dunwells','Lakey','Bryce Greene','Purrple Cat','Leonell Cassio','Ed Sheeran','Ethos','Kaitlyn Thompson']
+const artists = ['Jonathan Ceaser','Bryce Greene','The Dunwells','Lakey','Bryce Greene','Purrple Cat','Leonell Cassio','Ed Sheeran','Ethos','Kaitlyn Thompson'];
 
+// background gradients
+const backgroundGradients = [
+  'linear-gradient(to bottom, #3d5375, #151d29)',
+  'linear-gradient(to bottom, #BA5333, #411d12)',
+  'linear-gradient(to bottom, #5178b4, #5178b4)',
+  'linear-gradient(to bottom, #b45309, #3f1d03)',
+  'linear-gradient(to bottom, #C9BEC8, #4b3e4a)',
+  'linear-gradient(to bottom, #D85B7B, #571526)',
+  'linear-gradient(to bottom, #75663e, #292416)',
+  'linear-gradient(to bottom, #DEE4EC, #3b4d66)',
+  'linear-gradient(to bottom, #71797E, #282a2c)',
+  'linear-gradient(to bottom, #A463FF, #34007c)'
+]
 
 // keep track of song
 let songIndex = 0;
@@ -38,7 +52,9 @@ function loadSong(song){
   title.innerText = song;
   audio.src = `songs/${song}.mp3`;
   cover.src = `albumart/${song}.jpg`;
-  // artist
+  // background
+  const currentBackground = backgroundGradients[songIndex];
+  body.style.background = currentBackground
 }
 
 function loadArtist(artist){
