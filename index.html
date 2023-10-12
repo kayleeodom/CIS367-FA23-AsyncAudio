@@ -22,20 +22,20 @@
       <h1 class="flex text-xs p-6 font-semibold justify-center text-white">Music Player</h1>
       
       <div class="img-container p-10 lg:p-6">
-        <img src="albumart/BestPart.jpg" alt="music-cover" id="cover" class="rounded-xl lg:w-auto"/>
+        <img src="" alt="music-cover" id="cover" class="rounded-xl lg:w-auto"/>
       </div>
       
       <div class="music-info p-10 lg:p-6">
-        <h4 class="title font-bold text-3xl text-white lg:text-lg" id="title">Best Part of Me</h4>
-        <h3 class="artist text-lg text-light-gray pb-8 lg:pb-3" id="artist">The Dunwells</h3>
+        <h4 class="title font-bold text-3xl text-white lg:text-lg" id="title"></h4>
+        <h3 class="artist text-lg text-light-gray pb-8 lg:pb-3" id="artistName"></h3>
         
         <div class="progress-container rounded bg-darker-gray my-6" id="progress-container">
           <div class="progress bg-light-gray rounded" id="progress"></div>
 
           <div class="time flex flex-row p-2 justify-between">
             <!-- Need to take the hard code out-->
-            <p class="start text-white font-thin text-xs">2:13</p>
-            <p class="end text-white font-thin text-xs">-1:12</p>
+            <p class="start text-white font-thin text-xs" id="currTime"></p>
+            <p class="end text-white font-thin text-xs" id="durTime"></p>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
           <i class="fas fa-backward"></i>
         </button>
 
-        <button id="play" class="action-btn text-other-blue bg-white rounded-full p-6">
+        <button id="play" class="action-btn text-other-blue bg-white rounded-full py-4 px-6">
           <i class="fas fa-play"></i>
         </button>
 
